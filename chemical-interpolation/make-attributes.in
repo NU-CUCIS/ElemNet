@@ -1,0 +1,33 @@
+// Compute physics-inspired features for the training and test set
+
+// Load in a dataset of compounds
+data = new data.materials.CompositionDataset
+data import datasets\NaFeMnO_test_set.data
+
+// Define where to find elemental property data
+data attributes properties directory ../magpie/lookup-data/
+
+// Select which set of elemental properties to use for attributes
+data attributes properties add set general
+
+// Generate new attributes
+timer start
+data attributes generate
+timer elapsed
+
+// Set formation energy as property to be modeled
+data target delta_e
+
+// Save it in CSV format
+save data datasets\NaFeMnO_test_set-physics csv
+
+// Do the same thing with the training set
+data = data clone -empty
+data import datasets\NaFeMnO_train_set.data
+
+data attributes generate
+
+data target delta_e
+save data datasets\NaFeMnO_train_set-physics csv
+
+exit

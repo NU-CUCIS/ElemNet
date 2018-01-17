@@ -1,0 +1,21 @@
+// Create a search space for the ML model
+
+// Load in a dataset of compounds
+data = new data.materials.CompositionDataset
+
+// Create the search space
+data generate PhaseDiagramCompositionEntryGenerator 1 4 -crystal 24 Na Fe Mn O
+
+// Set to only compute element fractions
+data attributes generators clear
+data attributes generators add composition.ElementFractionAttributeGenerator
+
+// Generate new attributes
+timer start
+data attributes generate
+timer elapsed
+
+// Save it in CSV format
+save data datasets\NaFeMnO_search-space csv
+
+exit
