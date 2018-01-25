@@ -7,8 +7,7 @@ data = new data.materials.CompositionDataset
 data generate PhaseDiagramCompositionEntryGenerator 1 4 -crystal 24 Na Fe Mn O
 
 // Set to only compute element fractions
-data attributes generators clear
-data attributes generators add composition.ElementFractionAttributeGenerator
+data attributes properties directory ..\magpie\lookup-data
 
 // Generate new attributes
 timer start
@@ -16,7 +15,7 @@ data attributes generate
 timer elapsed
 
 // Save it in CSV format
-save data datasets\NaFeMnO_search-space csv
+save data datasets\NaFeMnO_search-space-physical csv
 
 // Do the same for Ti-O
 data = data clone -empty
@@ -24,6 +23,6 @@ data generate PhaseDiagramCompositionEntryGenerator 1 2 -crystal 24 Ti O
 
 data attributes generate
 
-save data datasets\Ti-O_search-space csv
+save data datasets\Ti-O_search-space-physical csv
 
 exit
