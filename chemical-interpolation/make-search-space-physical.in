@@ -7,6 +7,7 @@ data = new data.materials.CompositionDataset
 data generate PhaseDiagramCompositionEntryGenerator 1 4 -crystal 24 Na Fe Mn O
 
 // Set to only compute element fractions
+data attributes properties add set general
 data attributes properties directory ..\magpie\lookup-data
 
 // Generate new attributes
