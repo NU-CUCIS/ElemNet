@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/dkj755/OQMD_TL/tmp/model_bg_tlfe.ckpt"
+all_model_checkpoint_paths: "/home/dkj755/OQMD_TL/tmp/model_bg_tlfe.ckpt"
