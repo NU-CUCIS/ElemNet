@@ -1,10 +1,18 @@
 # ElemNet
-ElemNet is a 17-layered fully connected network for the prediction of formation energy (enthalpy) from elemental compositions only. This repository contains the model weights and a Jupiter notebook for making predictions using the ElemNet model.
 
-<b>Input</b>: Takes a 2D numpy array with the rows representing different compounds, and columns representing the elemental compositions with 86 elements in the set elements- ['H', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'K', 'Ca', 'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr', 'Rb', 'Sr', 'Y', 'Zr', 'Nb', 'Mo', 'Tc', 'Ru', 'Rh', 'Pd', 'Ag', 'Cd', 'In', 'Sn', 'Sb', 'Te', 'I', 'Xe', 'Cs', 'Ba', 'La', 'Ce', 'Pr', 'Nd', 'Pm', 'Sm', 'Eu', 'Gd', 'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu', 'Hf', 'Ta', 'W', 'Re', 'Os', 'Ir', 'Pt', 'Au', 'Hg', 'Tl', 'Pb', 'Bi', 'Ac', 'Th', 'Pa', 'U', 'Np', 'Pu'], elemental compositon does not contain any element from ['X_He', 'X_Ne', 'X_Ar', 'X_Po', 'X_At','X_Rn','X_Fr','X_Ra']
+This repository contains the analysis codes and deep learning models associated with "ElemNet: Deep Learning the Chemistry of Materials FromOnly Elemental Composition" by D. Jha et al. 
 
-<b>Output</b>: Returns a 1D numpy array with the predicted formation energy
+## Contents
 
-<b>Python version</b>: 2.7
+The deep learning model produced in this work is available in the [`elemnet` folder](./elemnet).
 
-<b>Prerequisite softwares</b>: TensorFlow and Numpy
+The other folders contain scripts associted with different analyses performed to characterize ElemNet. Each folder contains a README file that describes what the analyses are, and the notebooks should be self-describing.
+
+## Installation Requirements
+
+As this git repository uses submodules, you need to clone it with `git clone --recursive` to gather all of the required source code. 
+
+The basic requirement for re-using these environments are a Python 3 Jupyter environment with the packages listed in `requirements.txt`. 
+
+Some analyses required the use of [Magpie](https://bitbucket.org/wolverton/magpie), which requires Java JDK 1.7 or greater. 
+See [the Magpie documentation for details]
