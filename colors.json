@@ -1,0 +1,6 @@
+{
+    "source": "https://www.nature.com/articles/nmeth.1618?WT.ec_id=NMETH-201106",
+    "elemnet": [0.832, 0.367, 0],
+    "rf-comp": [0, 0.445, 0.695],
+    "rf-phys": [0, 0.617, 0.449]
+}

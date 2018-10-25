@@ -1,0 +1,3 @@
+[submodule "magpie"]
+	path = magpie
+	url = git@bitbucket.org:wolverton/magpie.git
