@@ -3,3 +3,4 @@ pandas==0.19.2
 pymatgen==4.7.4
 matplotlib==2.0.2
 numpy==1.12.1
+tensorflow==1.11.0
