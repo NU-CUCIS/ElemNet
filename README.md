@@ -22,12 +22,26 @@ The basic requirement for re-using these environments are a Python 3 Jupyter env
 Some analyses required the use of [Magpie](https://bitbucket.org/wolverton/magpie), which requires Java JDK 1.7 or greater.
 See [the Magpie documentation for details].
 
-
 ## Contents
 
-The deep learning model produced in this work is available in the [`elemnet` folder](./elemnet).
+The code for training the ElemNet model along with the trained model produced in this work are available in the [`elemnet` folder](./elemnet). The other folders contain scripts associted with different analyses performed to characterize ElemNet. The analysis notebooks should be self-describing, in other case there is a README file that describes the folder content.
 
-The other folders contain scripts associted with different analyses performed to characterize ElemNet. Each folder contains a README file that describes what the analyses are, and the notebooks should be self-describing.
+* chemical-interpolation
+
+* elemnet
+
+* evaluate-predictions
+
+* icsd-search
+
+* layer-projection
+
+* training-data
+
+## Developer Team
+
+The code was developed by Dipendra Jha from the <a href="http://cucis.ece.northwestern.edu/">CUCIS</a> group at the Electrical and Computer Engineering Department at Northwestern University and Logan Ward from the Computation Institute at University of Chicago.
+
 
 
 ## Citation
@@ -38,7 +52,7 @@ The other folders contain scripts associted with different analyses performed to
 
 ## Questions/Comments
 
-email: dipendra.jha@eecs.northwestern.edu or ankitag@eecs.northwestern.edue</br>
+email: dipendra.jha@eecs.northwestern.edu, loganw@uchicago.edu or ankitag@eecs.northwestern.edu</br>
 Copyright (C) 2019, Northwestern University.<br/>
 See COPYRIGHT notice in top-level directory.
 
