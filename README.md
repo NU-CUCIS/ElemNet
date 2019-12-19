@@ -26,17 +26,17 @@ See [the Magpie documentation for details].
 
 The code for training the ElemNet model along with the trained model produced in this work are available in the [`elemnet` folder](./elemnet). The other folders contain scripts associted with different analyses performed to characterize ElemNet. The analysis notebooks should be self-describing, in other case there is a README file that describes the folder content.
 
-* chemical-interpolation
+* chemical-interpolation: code for creating training sets for chemical interpolation test to determine whether machine learning models are able to infer the interactions between elements that are not included in the training set by plotting their phase diagrams [1].
 
-* elemnet
+* elemnet: code for data preprocessing and training the ElemNet model from scratch [1] and using transfer learning from a pretrained model [2], and also for making predictions using a trained model.
 
-* evaluate-predictions
+* evaluate-predictions: code for evaluating the predictions made by the ElemNet model [1].
 
-* icsd-search
+* icsd-search: list of matched compositions between ICSD and ones from combinatorial screening using ElemNet [1].
 
-* layer-projection
+* layer-projection: analysis of the activations from ElemNet to interpret how the model is learning the underlying chemistry.
 
-* training-data
+* training-data: the training data use for training ElemNet model in [1] and [2].
 
 ## Developer Team
 
