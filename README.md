@@ -28,7 +28,7 @@ The code for training the ElemNet model along with the trained model produced in
 
 * [`chemical-interpolation`](./chemical-interpolation): code for creating training sets for chemical interpolation test to determine whether machine learning models are able to infer the interactions between elements that are not included in the training set by plotting their phase diagrams [1].
 
-* [`elemnet`](./elemnet): code for data preprocessing and training the ElemNet model from scratch [1] and using transfer learning from a pretrained model [2], and also for making predictions using a trained model.
+* [`elemnet`](./elemnet): code for data preprocessing and training the ElemNet model from scratch [1] and using transfer learning from a pretrained model [2], and also for making predictions using a trained model. It contains a README file that explains the details about training and making predictions using ElemNet model.
 
 * [`evaluate-predictions`](./evaluate-predictions): code for evaluating the predictions made by the ElemNet model [1].
 
@@ -36,7 +36,7 @@ The code for training the ElemNet model along with the trained model produced in
 
 * [`layer-projection`](./layer-projection): analysis of the activations from ElemNet to interpret how the model is learning the underlying chemistry.
 
-* [`training-data`](./training-data): the training data use for training ElemNet model in [1] and [2].
+* [`training-data`](./training-data): the training data use for training ElemNet model in [1] and [2]. We use 'oqmd_all.data' in [1], the respective training and test (validation) sets are train_set_230960.data and test_set.data. For [2], we used oqmd_all-22Mar18.csv (OQMD), jv.csv (JARVIS), mp.csv (the Materials Project) and exp.csv (experimental observations) as the datasets.
 
 ## Developer Team
 
@@ -45,6 +45,8 @@ The code was developed by Dipendra Jha from the <a href="http://cucis.ece.northw
 
 
 ## Citation
+
+Please cite the following works if you are using the ElemNet model:
 
 1. D. Jha, L. Ward, A. Paul, W.-keng Liao, A. Choudhary, C. Wolverton, and A. Agrawal, “ElemNet: Deep Learning the Chemistry of Materials From Only Elemental Composition,” Scientific Reports, 8, Article number: 17593 (2018) [DOI:10.1038/s41598-018-35934-y]  [<a href="https://www.nature.com/articles/s41598-018-35934-y">PDF</a>].
 
