@@ -40,7 +40,9 @@ class Record_Results(object):
                     file_suff = file_suff+'_v1'
             except:
                 file_suff += get_date_str()
-            logfile_c = filename+'_'+file_suff+'.'+ext
+            if filename:
+                logfile_c = filename+'_'+file_suff+'.'+ext
+            else:   logfile_c = file_suff+'.'+ext
             with open(logfile_c, 'w') as f:
                 f.write(open(logfile, 'r').read())
         self.logfile = logfile
