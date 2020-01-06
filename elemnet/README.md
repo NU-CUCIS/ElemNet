@@ -11,15 +11,15 @@ ElemNet is a 17-layered fully connected network for the prediction of formation 
 
 ## Contents
 
-* data_preprocess.ipynb: Jupyter notebook that illustrates how to preprocess data for ElemNet. It uses the oqmd-all-22Mar18.csv dataset as sample, other datasets can be similarly preprocessed. Please run this with the respective data file to create the training and test/validation sets before running the model.
+* `data_preprocess.ipynb`: Jupyter notebook that illustrates how to preprocess data for ElemNet. It uses the oqmd-all-22Mar18.csv dataset as sample, other datasets can be similarly preprocessed. Please run this with the respective data file to create the training and test/validation sets before running the model.
 
-* dl_regressors.py: Code to run the ElemNet model for training.
+* `dl_regressors.py`: Code to run the ElemNet model for training.
 
-* data_utils.py: Utility code for data loading.
+* `data_utils.py`: Utility code for data loading.
 
-* train_utils.py: Utility code for training the model.
+* `train_utils.py`: Utility code for training the model.
 
-* sample: A sample run folder that contains running configuration and the ElemNet trained using random split of oqmd-all-22Mar18.csv. The 'sample_model' can be used for transfer learning.
+* `sample`: A sample run folder that contains running configuration and the ElemNet trained using random split of oqmd-all-22Mar18.csv. The 'sample_model' can be used for transfer learning.
 
 ## Running the code
 
