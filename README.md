@@ -22,7 +22,7 @@ The basic requirement for re-using these environments are a Python 3 Jupyter env
 Some analyses required the use of [Magpie](https://bitbucket.org/wolverton/magpie), which requires Java JDK 1.7 or greater.
 See [the Magpie documentation for details].
 
-## Contents
+## Source Files
 
 The code for training the ElemNet model along with the trained model produced in this work are available in the [`elemnet` folder](./elemnet). The other folders contain scripts associted with different analyses performed to characterize ElemNet. The analysis notebooks should be self-describing, in other case there is a README file that describes the folder content.
 
@@ -38,19 +38,30 @@ The code for training the ElemNet model along with the trained model produced in
 
 * [`training-data`](./training-data): the training data use for training ElemNet model in [1] and [2]. We use 'oqmd_all.data' in [1], the respective training and test (validation) sets are train_set_230960.data and test_set.data. For [2], we used oqmd_all-22Mar18.csv (OQMD), jv.csv (JARVIS), mp.csv (the Materials Project) and exp.csv (experimental observations) as the datasets.
 
+## Running the code
+
+The code to run the ElemNet model is privided inside the [`elemnet`](./elemnet) folder. Inside this folder, you can simply run the code by passing a sample config file to the dl_regressors.py as follows:
+
+`python dl_regressors.py --config_file sample/sample-run.config`
+
+The config file defines the loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNEt] and other runtime parameters. For transfer learning, you need to set 'model_path' [e.g. sample/sample_model]. The output log
+from this sample run is provided in the `sample/sample.log` file.
+
+
+
 ## Developer Team
 
 The code was developed by Dipendra Jha from the <a href="http://cucis.ece.northwestern.edu/">CUCIS</a> group at the Electrical and Computer Engineering Department at Northwestern University and Logan Ward from the Computation Institute at University of Chicago.
 
 
 
-## Citation
+## Publications
 
-Please cite the following works if you are using the ElemNet model:
+Please cite the following works if you are using ElemNet model:
 
-1. D. Jha, L. Ward, A. Paul, W.-keng Liao, A. Choudhary, C. Wolverton, and A. Agrawal, “ElemNet: Deep Learning the Chemistry of Materials From Only Elemental Composition,” Scientific Reports, 8, Article number: 17593 (2018) [DOI:10.1038/s41598-018-35934-y]  [<a href="https://www.nature.com/articles/s41598-018-35934-y">PDF</a>].
+1. Dipendra Jha, Logan Ward, Arindam Paul, Wei-keng Liao, Alok Choudhary, Chris Wolverton, and Ankit Agrawal, “ElemNet: Deep Learning the Chemistry of Materials From Only Elemental Composition,” Scientific Reports, 8, Article number: 17593 (2018) [DOI:10.1038/s41598-018-35934-y]  [<a href="https://www.nature.com/articles/s41598-018-35934-y">PDF</a>].
 
-2. D. Jha, K. Choudhary, F. Tavazza, W.-keng Liao, A. Choudhary, C. Campbell, A. Agrawal, "Enhancing materials property prediction by leveraging computational and experimental data using deep transfer learning," Nature Communications, 10, Article number: 5316 (2019) [DOI: https:10.1038/s41467-019-13297-w] [<a href="https://www.nature.com/articles/s41467-019-13297-w">PDF</a>].
+2. Dipendra Jha, Kamal Choudhary, Francesca Tavazza, Wei-keng Liao, Alok Choudhary, Carelyn Campbell, Ankit Agrawal, "Enhancing materials property prediction by leveraging computational and experimental data using deep transfer learning," Nature Communications, 10, Article number: 5316 (2019) [DOI: https:10.1038/s41467-019-13297-w] [<a href="https://www.nature.com/articles/s41467-019-13297-w">PDF</a>].
 
 ## Questions/Comments
 
