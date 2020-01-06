@@ -9,7 +9,7 @@ ElemNet is a 17-layered fully connected network for the prediction of formation 
 
 <b>Prerequisite softwares</b>: TensorFlow and Numpy (see requirements.txt in root directory)
 
-## Contents
+## Source Files
 
 * `data_preprocess.ipynb`: Jupyter notebook that illustrates how to preprocess data for ElemNet. It uses the oqmd-all-22Mar18.csv dataset as sample, other datasets can be similarly preprocessed. Please run this with the respective data file to create the training and test/validation sets before running the model.
 
@@ -27,7 +27,8 @@ You can simply run the code by passing a sample config file to the dl_regressors
 
 `python dl_regressors.py --config_file sample/sample-run.config`
 
-The config file defines the loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNEt] and other runtime parameters. For transfer learning, you need to set 'model_path' [e.g. sample/sample_model].
+The config file defines the loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNEt] and other runtime parameters. For transfer learning, you need to set 'model_path' [e.g. sample/sample_model]. The output log
+from this sample run is provided in the `sample/sample.log` file.
 
 ## Developer Team
 
@@ -35,13 +36,13 @@ The code was developed by Dipendra Jha from the <a href="http://cucis.ece.northw
 
 
 
-## Citation
+## Publications
 
 Please cite the following works if you are using ElemNet model:
 
-1. D. Jha, L. Ward, A. Paul, W.-keng Liao, A. Choudhary, C. Wolverton, and A. Agrawal, “ElemNet: Deep Learning the Chemistry of Materials From Only Elemental Composition,” Scientific Reports, 8, Article number: 17593 (2018) [DOI:10.1038/s41598-018-35934-y]  [<a href="https://www.nature.com/articles/s41598-018-35934-y">PDF</a>].
+1. Dipendra Jha, Logan Ward, Arindam Paul, Wei-keng Liao, Alok Choudhary, Chris Wolverton, and Ankit Agrawal, “ElemNet: Deep Learning the Chemistry of Materials From Only Elemental Composition,” Scientific Reports, 8, Article number: 17593 (2018) [DOI:10.1038/s41598-018-35934-y]  [<a href="https://www.nature.com/articles/s41598-018-35934-y">PDF</a>].
 
-2. D. Jha, K. Choudhary, F. Tavazza, W.-keng Liao, A. Choudhary, C. Campbell, A. Agrawal, "Enhancing materials property prediction by leveraging computational and experimental data using deep transfer learning," Nature Communications, 10, Article number: 5316 (2019) [DOI: https:10.1038/s41467-019-13297-w] [<a href="https://www.nature.com/articles/s41467-019-13297-w">PDF</a>].
+2. Dipendra Jha, Kamal Choudhary, Francesca Tavazza, Wei-keng Liao, Alok Choudhary, Carelyn Campbell, Ankit Agrawal, "Enhancing materials property prediction by leveraging computational and experimental data using deep transfer learning," Nature Communications, 10, Article number: 5316 (2019) [DOI: https:10.1038/s41467-019-13297-w] [<a href="https://www.nature.com/articles/s41467-019-13297-w">PDF</a>].
 
 ## Questions/Comments
 
