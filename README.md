@@ -44,7 +44,7 @@ The code to run the ElemNet model is privided inside the [`elemnet`](./elemnet) 
 
 `python dl_regressors.py --config_file sample/sample-run.config`
 
-The config file defines the loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNEt] and other runtime parameters. For transfer learning, you need to set 'model_path' [e.g. sample/sample_model]. The output log
+The config file defines the loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNet] and other runtime parameters. For transfer learning, you need to set 'model_path' [e.g. `sample/sample_model`]. The output log
 from this sample run is provided in the `sample/sample.log` file.
 
 
