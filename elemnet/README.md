@@ -11,7 +11,7 @@ ElemNet is a 17-layered fully connected network for the prediction of formation 
 
 ## Source Files
 
-* `data_preprocess.ipynb`: Jupyter notebook that illustrates how to preprocess data for ElemNet. It uses the oqmd-all-22Mar18.csv dataset as sample, other datasets can be similarly preprocessed. Please run this with the respective data file to create the training and test/validation sets before running the model.
+* `data_preprocess.ipynb`: Jupyter notebook that illustrates how to preprocess data for ElemNet. It uses the training-data/oqmd_all-22Mar18.csv dataset as sample, other datasets can be similarly preprocessed. Please run this with the respective data file to create the training and test/validation sets before running the model.
 
 * `dl_regressors.py`: Code to run the ElemNet model for training.
 
@@ -19,7 +19,9 @@ ElemNet is a 17-layered fully connected network for the prediction of formation 
 
 * `train_utils.py`: Utility code for training the model.
 
-* `sample`: A sample run folder that contains running configuration and the ElemNet trained using random split of oqmd-all-22Mar18.csv. The 'sample_model' can be used for transfer learning.
+* `sample`: A sample run folder that contains running configuration and the
+  ElemNet trained using random split of training-data/oqmd_all-22Mar18.csv. The
+  'sample_model' can be used for transfer learning.
 
 ## Running the code
 
@@ -29,6 +31,10 @@ You can simply run the code by passing a sample config file to the dl_regressors
 
 The config file defines the loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNet] and other runtime parameters. For transfer learning, you need to set 'model_path' [e.g. `sample/sample_model`]. The output log
 from this sample run is provided in the `sample/sample.log` file.
+
+* Extra files:
+  + [sample/sample_model.data-00000-of-00001](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/elemnet/sample/sample_model.data-00000-of-00001) (54 MB).
+  + [tmp/model.ckpt.data-00000-of-00001](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/elemnet/tmp/model.ckpt.data-00000-of-00001) (54 MB).
 
 ## Developer Team
 
