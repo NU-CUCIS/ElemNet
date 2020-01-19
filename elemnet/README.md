@@ -23,6 +23,8 @@ ElemNet is a 17-layered fully connected network for the prediction of formation 
   ElemNet trained using random split of training-data/oqmd_all-22Mar18.csv. The
   'sample_model' can be used for transfer learning.
 
+* `make_prediction.ipynb`: Jupyter notebook that illustrates how to make predictions using the trained ElemNet model from paper [1].
+
 ## Running the code
 
 You can simply run the code by passing a sample config file to the dl_regressors.py as follows:
@@ -33,8 +35,8 @@ The config file defines the loss_type, training_data_path, test_data_path, label
 from this sample run is provided in the `sample/sample.log` file.
 
 * Extra files:
-  + [sample/sample_model.data-00000-of-00001](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/elemnet/sample/sample_model.data-00000-of-00001) (54 MB).
-  + [tmp/model.ckpt.data-00000-of-00001](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/elemnet/tmp/model.ckpt.data-00000-of-00001) (54 MB).
+  + [sample/sample_model.data-00000-of-00001](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/elemnet/sample/sample_model.data-00000-of-00001) (54 MB) - part of the model trained using sample config file above.
+  + [tmp/model.ckpt.data-00000-of-00001](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/elemnet/tmp/model.ckpt.data-00000-of-00001) (54 MB) - part of the model used in the `make_prediction.ipynb'.
 
 ## Developer Team
 
