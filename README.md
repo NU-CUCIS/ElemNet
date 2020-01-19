@@ -35,6 +35,9 @@ See [the Magpie documentation for details]
 
 2. D. Jha, K. Choudhary, F. Tavazza, W.-keng Liao, A. Choudhary, C. Campbell, A. Agrawal, "Enhancing materials property prediction by leveraging computational and experimental data using deep transfer learning," Nature Communications, 10, Article number: 5316 (2019) [DOI: https:10.1038/s41467-019-13297-w] [<a href="https://www.nature.com/articles/s41467-019-13297-w">PDF</a>].
 
+* Extra files:
+  + [evaluate-predictions/dl_best.pkl.gz](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/evaluate-predictions/dl_best.pkl.gz) (24 MB).
+
 ## Questions/Comments
 
 email: dipendra.jha@eecs.northwestern.edu or ankitag@eecs.northwestern.edue</br>

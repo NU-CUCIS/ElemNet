@@ -8,3 +8,7 @@ ElemNet is a 17-layered fully connected network for the prediction of formation 
 <b>Python version</b>: 3.6
 
 <b>Prerequisite softwares</b>: TensorFlow and Numpy (see requirements.txt in root directory)
+
+* Extra files:
+  + [tmp/model.ckpt.data-00000-of-00001](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/elemnet/tmp/model.ckpt.data-00000-of-00001) (54 MB).
+
