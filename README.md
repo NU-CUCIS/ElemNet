@@ -47,7 +47,8 @@ The code to run the ElemNet model is privided inside the [`elemnet`](./elemnet) 
 The config file defines the loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNet] and other runtime parameters. For transfer learning, you need to set 'model_path' [e.g. `sample/sample_model`]. The output log
 from this sample run is provided in the `sample/sample.log` file.
 
-
+* Extra files:
+  + [evaluate-predictions/dl_best.pkl.gz](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/evaluate-predictions/dl_best.pkl.gz) (24 MB).
 
 ## Developer Team
 
