@@ -38,6 +38,14 @@ The code for training the ElemNet model along with the trained model produced in
 
 * [`data`](./data): the datasets used for training ElemNet model in [1] and [2]. We use 'oqmd_all.data' in [1]. For [2], we used 'oqmd_all-22Mar18.csv' (OQMD), 'jv.csv' (JARVIS), 'mp.csv' (the Materials Project) and 'exp.csv' (experimental observations) as the starting datasets. We also provide the preprocessed experimental data- 'experimental.csv', which contains the elemental fractions and can be used for creating test, train and validation splits; the respective training and test sets for both 8:2 and 9:1 hold-out train:test splits are provided inside 'holdout-new/20' and 'holdout-new/10' folders respectively.
 
+Please download and extract the following files as required:
+
+  + [chemical-interpolation/datasets](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/chemical-interpolation/datasets.tar.gz) (28 K).
+  + [chemical-interpolation/model-outputs](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/chemical-interpolation/model-outputs.tar.gz) (7.4 M).
+  + [icsd-search](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/icsd-search.tar.gz) (644 K).
+  + [data](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/data.tar.gz) (120 M).
+  
+
 ## Running the code
 
 The code to run the ElemNet model is privided inside the [`elemnet`](./elemnet) folder. Inside this folder, you can simply run the code by passing a sample config file to the dl_regressors.py as follows:
@@ -47,13 +55,6 @@ The code to run the ElemNet model is privided inside the [`elemnet`](./elemnet) 
 The config file defines the loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNet] and other runtime parameters. For transfer learning, you need to set 'model_path' [e.g. `sample/sample_model`]. The output log
 from this sample run is provided in the `sample/sample.log` file.
 
-Please download and extract the following files as required:
-
-  + [chemical-interpolation/datasets](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/chemical-interpolation/datasets.tar.gz) (28 K).
-  + [chemical-interpolation/model-outputs](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/chemical-interpolation/model-outputs.tar.gz) (7.4 M).
-  + [icsd-search](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/icsd-search.tar.gz) (644 K).
-  + [data](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/data.tar.gz) (120 M).
-  
 
 ## Developer Team
 
