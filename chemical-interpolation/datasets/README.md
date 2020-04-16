@@ -1,4 +1,4 @@
-This directory contains training and test sets for a 'phase diagram holdout test'. 
+This directory contains training and test sets for a 'phase diagram holdout test' generated using create-training-sets.ipynb notebook. To generate the '-fraction.csv' and '-physical.csv', please use the  generate-features.scala (this uses magpie).
 
 There are data for two different holdout tests:
     1. Excluding all of the data from the Na-Mn-Fe-O phase diagram. (Anything that contains exclusively Na, Mn, Fe, and O)

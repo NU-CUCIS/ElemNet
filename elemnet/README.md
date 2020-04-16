@@ -11,7 +11,9 @@ ElemNet is a 17-layered fully connected network for the prediction of formation 
 
 ## Source Files
 
-* `data_preprocess.ipynb`: Jupyter notebook that illustrates how to preprocess data for ElemNet. It uses the training-data/oqmd_all-22Mar18.csv dataset as sample, other datasets can be similarly preprocessed. Please run this with the respective data file to create the training and test/validation sets before running the model.
+* `data_preprocess.ipynb`: Jupyter notebook that illustrates how to preprocess data before training an ElemNet model. It uses the training-data/oqmd_all-22Mar18.csv dataset as sample, other datasets can be similarly preprocessed. Please run this with the respective data file to create the training and test/validation sets before running the model.
+
+* `create_holdout.ipynb`: Jupyter notebook that illustrates how to split preprocessed dataset to create training, validation and test sets for 10-fold cross validation, hold-out test set experiments, and the impact of training size experiment in paper [2].
 
 * `dl_regressors.py`: Code to run the ElemNet model for training.
 
