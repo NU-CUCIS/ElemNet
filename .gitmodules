@@ -1,3 +1,7 @@
 [submodule "magpie"]
+	path = magpie
+	url = git@bitbucket.org:wolverton/magpie.git
+
+[submodule "magpie"]
 	path = elemnet/magpie
 	url = git@bitbucket.org:wolverton/magpie.git
