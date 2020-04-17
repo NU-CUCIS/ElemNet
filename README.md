@@ -15,8 +15,6 @@ This repository contains the code for performing data processing, model training
 
 ## Installation Requirements
 
-As this git repository uses submodules, you need to clone it with `git clone --recursive` to gather all of the required source code.
-
 The basic requirement for re-using these environments are a Python 3.6.3 Jupyter environment with the packages listed in `requirements.txt`.
 
 Some analyses required the use of [Magpie](https://bitbucket.org/wolverton/magpie), which requires Java JDK 1.7 or greater.
