@@ -27,6 +27,7 @@ The code for training the ElemNet model along with the trained model produced in
 Please download and extract files for the following paths as required:
   + [chemical-interpolation/datasets](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/chemical-interpolation/datasets.tar.gz) (28 K).
   + [chemical-interpolation/model-outputs](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/chemical-interpolation/model-outputs.tar.gz) (7.4 M).
+  + [evaluate-predictions/new-datasets](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/evaluate-predictions/new-datasets.tar.gz) (66 M).
   + [icsd-search](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/icsd-search.tar.gz) (644 K).
   + [data](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/data.tar.gz) (120 M).
   
