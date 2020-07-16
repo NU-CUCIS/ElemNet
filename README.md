@@ -29,7 +29,7 @@ Please download and extract files for the following paths as required:
   + [chemical-interpolation/model-outputs](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/chemical-interpolation/model-outputs.tar.gz) (7.4 M).
   + [evaluate-predictions/new-datasets](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/evaluate-predictions/new-datasets.tar.gz) (66 M).
   + [icsd-search](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/icsd-search.tar.gz) (644 K).
-  + [data](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/data.tar.gz) (120 M).
+  + [data](http://cucis.ece.northwestern.edu/projects/DataSets/ElemNet/data.tar.gz) (551 M).
   
 Here is a brief explanation about the folder content:
 
