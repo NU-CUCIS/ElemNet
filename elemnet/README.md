@@ -23,7 +23,7 @@ ElemNet is a 17-layered fully connected network for the prediction of formation 
 
 * `sample`: A sample run folder that contains running configuration and the
   ElemNet trained using random split of training-data/oqmd_all-22Mar18.csv. The
-  'sample_model' can be used for transfer learning.
+  'sample_model' can be used for transfer learning to replicate the results in paper [2].
 
 * `make_prediction.ipynb`: Jupyter notebook that illustrates how to make predictions using the trained ElemNet model from paper [1].
 
@@ -33,7 +33,7 @@ You can simply run the code by passing a sample config file to the dl_regressors
 
 `python dl_regressors.py --config_file sample/sample-run.config`
 
-The config file defines the loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNet] and other runtime parameters. For transfer learning, you need to set 'model_path' [e.g. `sample/sample_model`]. The output log
+The config file defines the loss_type, training_data_path, test_data_path, label, input_type [elements_tl for ElemNet] and other runtime parameters. For transfer learning used in paper [2], you need to set 'model_path' to the model checkpoint trained on the larger dataset (OQMD in our case) [e.g. `"model_path":"sample/sample_model"`] in the config file. The output log
 from this sample run is provided in the `sample/sample.log` file.
 
 * Extra files:
