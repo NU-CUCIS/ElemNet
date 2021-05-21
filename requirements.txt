@@ -5,4 +5,4 @@ pymatgen==2019.1.13
 matplotlib==3.0.2
 matminer==0.4.9
 numpy==1.15.4
-tensorflow==1.15.2
+tensorflow==2.5.0
